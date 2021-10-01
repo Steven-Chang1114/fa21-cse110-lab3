@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <meta charset="UTF-8">
+        <title>Meeting Minutes</title>
+        <link rel="icon" 
+            type="image/png" 
+            href="icon.jpeg">
+    </head>
+
+    <body>
+
+        <!--HEADER-->
+        <header>
+            <h1>Meeting Minutes</h1>
+            <h3>2021.10.01</h3>
+        </header>
+
+        <!--Navigation-->
+        <nav>
+            <div>
+                <a href="#agenda">Agenda</a> |
+                <a href="#questions">Questions</a> |
+                <a href="#summary">Summary</a> |
+                <a href="#attendence">Attendence</a> 
+            </div>
+        </nav>
+
+        <br>
+        <hr>
+
+        <!--Main Context-->
+        <main>
+            <div>
+
+                 <!--Agenda-->
+                <section>
+                    <div>
+                        <h2 id="agenda">Agenda:</h2>
+                        <div>
+                            <p>Unfinished task from last meeting:</p>
+                            <div>
+                                <ul>
+                                    <li>Distribute the roles for each teammembers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <p>Today's plan:</p>
+                            <div>
+                                <ol>
+                                    <li>Ice breaking with the new teammates</li>
+                                    <li>Discuss the tech stack for the project</li>
+                                    <li>Plan and discuss workshops for the new tech stack</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br>
+
+                 <!--Questions-->
+                <section>
+                    <div>
+                        <h2 id="questions">Questions:</h2>
+                        <div>
+                            <ul>
+                                <li>The budget for the project</li>
+                                <li>The expected working time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <br>
+
+                 <!--Summary-->
+                <section>
+                    <div>
+                        <h2 id="summary">Summary:</h2>
+                    </div>
+                    <div>
+                        <details>
+                            <summary>New teammates</summary>
+                            <p>we introduces the new members to the team, their names are <em>Tom</em> and <em>Jerry</em>.<span></p>
+                        </details>
+
+                        <details>
+                            <summary>Main tech stacks</summary>
+                            <p>we decide to use <strong>React</strong> as our main stack and we will hold 
+                                <strong>workshops</strong> in the following weeks for people who is not familiar with React.</p>
+                        </details>
+
+                        <details>
+                            <summary>Software architecture</summary>
+                            <p>we have dicsuss the <strong>main architecture</strong> of the project that we are going to do and the 
+                                diagram will be listed below.</p>
+                        </details>
+
+                        <img src="design.jpeg" alt="Software design" width="600" height="400">
+
+                        <div>
+                            <div>
+                                <p>The discussion recording:</p>
+                                <video width="320" height="240" controls>
+                                    <source src="video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <br>
+                            <div>
+                                <p>The discussion recording (Audio):</p>
+                                <audio controls>
+                                    <source src="audio.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                  </audio>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br>
+
+                 <!--Attendance List-->
+                <section>
+                    <div>
+                        <h2 id="attendence">Attendance List:</h2>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Steven <i>(Present)</i></li>
+                            <li>Stephen <b>(Absent)</b></li>
+                            <li>Jack <i>(Present)</i></li>
+                            <li>Philip <i>(Present)</i></li>
+                            <li>Owen <b>(Absent)</b></li>
+                        </ul>
+                    </div>
+                </section>
+                <br>
+            </div>
+        </main>
+
+        <hr>
+        
+        <!--Footer-->
+        <footer>
+            <h2>Contact Us</h2>
+            <div>
+                <form action="#">
+                    <fieldset>
+                        <div>
+                            <label for="fname">First Name:</label>
+                            <input type="text" name="firstname" placeholder="First name">
+                        </div>
+                        <br>
+    
+                        <div>
+                            <label for="lname">Last Name:</label>
+                            <input type="text" name="lastname" placeholder="Last name">
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="nationality">Nationality:</label>
+                            <input list="nationalities" name="nationality" id="nationality">
+                            <datalist id="nationalities">
+                              <option value="Canada">
+                              <option value="USA">
+                              <option value="UK">
+                            </datalist>
+                        </div>
+                        <br>
+    
+                        <div>
+                            <label for="major">Major:</label>
+                            <select id="major" name="major">
+                              <option value="cs">Computer Science</option>
+                              <option value="ce">Computer Engineering</option>
+                              <option value="ee">Electronics Engineering</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <p>Tech stack:</p>
+                            <input type="checkbox" id="react" name="react" value="react">
+                            <label for="react"> React</label><br>
+                            <input type="checkbox" id="vue" name="vue" value="vue">
+                            <label for="vue">Vue</label><br>
+                            <input type="checkbox" id="angular" name="angular" value="angular">
+                            <label for="angular">Angular</label><br>
+                        </div>
+
+                        <div>
+                            <p>Select a role:</p>
+                            <div>
+                            <input type="radio" id="frontend" name="role" value="frontend">
+                            <label for="frontend">Frontend</label>
+                            </div>
+
+                            <div>
+                            <input type="radio" id="backend" name="role" value="backend">
+                            <label for="backend">Backend</label>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="start">Preferred start date:</label>
+
+                            <input type="date" id="start" name="trip-start"
+                                value="2021-10-01">
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                        <br>
+    
+                        <button type="button" class="submit">Submit</button>
+                    </fieldset>
+                  </form>
+            </div>
+        </footer>
+    </body>
+</html>
