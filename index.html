@@ -7,6 +7,20 @@
             type="image/png" 
             href="icon.jpeg">
         <link rel="stylesheet" href="style.css">
+        <style>
+            .input_date {
+                display: inline-block;
+            }
+
+            .radio div {
+                flex: 1 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        </style>
     </head>
 
     <body>
@@ -173,42 +187,51 @@
 
                         <div class="input">
                             <p>Tech stack:</p>
-                            <input type="checkbox" id="react" name="react" value="react">
-                            <label for="react"> React</label>
-                            <input type="checkbox" id="vue" name="vue" value="vue">
-                            <label for="vue">Vue</label>
-                            <input type="checkbox" id="angular" name="angular" value="angular">
-                            <label for="angular">Angular</label>
+                            <div>
+                                <input type="checkbox" id="react" name="react" value="react">
+                                <label for="react"> React</label>
+                                <input type="checkbox" id="vue" name="vue" value="vue">
+                                <label for="vue">Vue</label>
+                                <input type="checkbox" id="angular" name="angular" value="angular">
+                                <label for="angular">Angular</label>
+                            </div>
                         </div>
 
                         <div class="input">
                             <p>Select a role:</p>
-                            <div>
-                            <input type="radio" id="frontend" name="role" value="frontend">
-                            <label for="frontend">Frontend</label>
-                            </div>
+                            <div class="radio" style="display: flex;">
+                                <div>
+                                        <input type="radio" id="frontend" name="role" value="frontend">
+                                        <label for="frontend">Frontend</label>
+                                </div>
+    
+                                <div>
+                                    <input type="radio" id="backend" name="role" value="backend">
+                                    <label for="backend">Backend</label>
+                                </div>
 
-                            <div>
-                            <input type="radio" id="backend" name="role" value="backend">
-                            <label for="backend">Backend</label>
+                                <div>
+                                    <input type="radio" id="pm" name="role" value="pm">
+                                    <label for="pm">PM</label>
+                                </div>
                             </div>
                         </div>
 
                         <div class="input">
                             <label for="start">Preferred start date:</label>
 
-                            <input type="date" id="start" name="trip-start"
+                            <input class="input_date" type="date" id="start" name="trip-start"
                                 value="2021-10-01">
                         </div>
 
                         <div class="input">
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                            <label for="message">Message:</label>
+                            <textarea style="display:block" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
                         </div>
     
                         <button type="button" class="submit">Submit</button>
                     </fieldset>
-                  </form>
+                </form>
             </div>
         </footer>
     </body>
