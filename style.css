@@ -1,11 +1,35 @@
 /* General */
+* {
+    margin-bottom: 1mm;
+}
+
+@media only screen and (max-width: 68.75em) {
+    html {
+        font-size: 70%; 
+    } 
+}
+
 h1 {
     margin-top: 1em;
     color:rgb(82, 11, 203);
+    text-align: center;
+}
+
+span {
+    display: inline;
+}
+
+strong {
+    text-decoration: underline;
 }
 
 body {
     background-color: antiquewhite;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 120rem;
+    min-width: 1rem;
 }
 
 /* Header */
@@ -13,6 +37,7 @@ body {
 
 /* Nav */
 nav {
+    position: relative;
     padding: 1em 1em 1em 1em;
     border-radius: 10%;
     border-width: 1mm;
@@ -34,13 +59,23 @@ section {
     margin-bottom: 3rem;
 }
 
+#agenda {
+    position: static;
+}
+
 /* Footer */
-fieldset {
-    text-align: center;
+button:hover {
+    color: blue;
+}
+
+button:active {
+    color: red;
 }
 
 .input {
     margin: auto;
+    height: auto;
+    width: auto;
 }
 
 details {
@@ -65,7 +100,7 @@ details {
 }
 
 .video {
-    margin-top: -8vh;
+    margin-top: -3vh;
 }
 
 .audio {
