@@ -9,12 +9,6 @@
     } 
 }
 
-h1, h2, h3 {
-    margin-top: 1em;
-    color:rgb(82, 11, 203);
-    text-align: center;
-}
-
 span {
     display: inline;
 }
@@ -33,7 +27,11 @@ body {
 }
 
 /* Header */
-
+h1, h2, h3 {
+    margin-top: 1em;
+    color:rgb(82, 11, 203);
+    text-align: center;
+}
 
 /* Nav */
 nav {
@@ -126,4 +124,12 @@ details {
 
 .audio {
     margin-left: 1cm;
+}
+
+summary ~ p {
+    font-size: 120%;
+}
+
+h1 + h3 {
+    font-size: 200%;
 }
