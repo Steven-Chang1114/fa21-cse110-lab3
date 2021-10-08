@@ -14,7 +14,7 @@
         <!--HEADER-->
         <header>
             <h1>Meeting Minutes</h1>
-            <h3>2021.10.01</h3>
+            <h3 class="date">2021.10.01</h3>
         </header>
 
         <!--Navigation-->
@@ -27,7 +27,6 @@
             </div>
         </nav>
 
-        <br>
         <hr>
 
         <!--Main Context-->
@@ -59,7 +58,6 @@
                         </div>
                     </div>
                 </section>
-                <br>
 
                  <!--Questions-->
                 <section>
@@ -73,7 +71,6 @@
                         </div>
                     </div>
                 </section>
-                <br>
 
                  <!--Summary-->
                 <section>
@@ -98,28 +95,26 @@
                                 diagram will be listed below.</p>
                         </details>
 
-                        <img src="design.jpeg" alt="Software design" width="600" height="400">
+                        <img class="design" src="design.jpeg" alt="Software design" width="600" height="400">
 
-                        <div>
+                        <div class="media">
                             <div>
                                 <p>The discussion recording:</p>
-                                <video width="320" height="240" controls>
+                                <video width="320" height="240" class="video" controls>
                                     <source src="video.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <br>
                             <div>
                                 <p>The discussion recording (Audio):</p>
-                                <audio controls>
-                                    <source src="audio.mp3" type="audio/mpeg">
+                                <audio class="audio" controls>
+                                    <source class="source_audio" src="audio.mp3" type="audio/mpeg">
                                     Your browser does not support the audio tag.
                                   </audio>
                             </div>
                         </div>
                     </div>
                 </section>
-                <br>
 
                  <!--Attendance List-->
                 <section>
@@ -128,15 +123,14 @@
                     </div>
                     <div>
                         <ul>
-                            <li>Steven <i>(Present)</i></li>
-                            <li>Stephen <b>(Absent)</b></li>
-                            <li>Jack <i>(Present)</i></li>
-                            <li>Philip <i>(Present)</i></li>
-                            <li>Owen <b>(Absent)</b></li>
+                            <li><span class="present">Steven <i>(Present)</i></span></li>
+                            <li><span class="absent">Stephen <b>(Absent)</b></span></li>
+                            <li><span class="present">Jack <i>(Present)</i></span></li>
+                            <li><span class="present">Philip <i>(Present)</i></span></li>
+                            <li><span class="absent">Owen <b>(Absent)</b></span></li>
                         </ul>
                     </div>
                 </section>
-                <br>
             </div>
         </main>
 
@@ -148,19 +142,17 @@
             <div>
                 <form action="#">
                     <fieldset>
-                        <div>
+                        <div class="input">
                             <label for="fname">First Name:</label>
                             <input id="fname" type="text" name="firstname" placeholder="First name">
                         </div>
-                        <br>
     
-                        <div>
+                        <div class="input">
                             <label for="lname">Last Name:</label>
                             <input id="lname" type="text" name="lastname" placeholder="Last name">
                         </div>
-                        <br>
 
-                        <div>
+                        <div class="input">
                             <label for="nationality">Nationality:</label>
                             <input list="nationalities" name="nationality" id="nationality">
                             <datalist id="nationalities">
@@ -169,9 +161,8 @@
                               <option value="UK">
                             </datalist>
                         </div>
-                        <br>
     
-                        <div>
+                        <div class="input">
                             <label for="major">Major:</label>
                             <select id="major" name="major">
                               <option value="cs">Computer Science</option>
@@ -180,17 +171,17 @@
                             </select>
                         </div>
 
-                        <div>
+                        <div class="input">
                             <p>Tech stack:</p>
                             <input type="checkbox" id="react" name="react" value="react">
-                            <label for="react"> React</label><br>
+                            <label for="react"> React</label>
                             <input type="checkbox" id="vue" name="vue" value="vue">
-                            <label for="vue">Vue</label><br>
+                            <label for="vue">Vue</label>
                             <input type="checkbox" id="angular" name="angular" value="angular">
-                            <label for="angular">Angular</label><br>
+                            <label for="angular">Angular</label>
                         </div>
 
-                        <div>
+                        <div class="input">
                             <p>Select a role:</p>
                             <div>
                             <input type="radio" id="frontend" name="role" value="frontend">
@@ -202,21 +193,18 @@
                             <label for="backend">Backend</label>
                             </div>
                         </div>
-                        <br>
 
-                        <div>
+                        <div class="input">
                             <label for="start">Preferred start date:</label>
 
                             <input type="date" id="start" name="trip-start"
                                 value="2021-10-01">
                         </div>
-                        <br>
 
-                        <div>
-                            <label for="message">Message:</label>
+                        <div class="input">
+                            <label for="message">Message:</label><br>
                             <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
                         </div>
-                        <br>
     
                         <button type="button" class="submit">Submit</button>
                     </fieldset>
