@@ -1,7 +1,7 @@
 ---
 name: Style request
 about: Adding styles to this project
-title: ''
+title: "[CSS]"
 labels: style
 assignees: ''
 
